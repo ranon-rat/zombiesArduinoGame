@@ -1,4 +1,3 @@
-//YWROBOT
 
 #include <LiquidCrystal_I2C.h>
 LiquidCrystal_I2C lcd(0x27, 20, 4);
@@ -15,6 +14,7 @@ class protagonist {
       B01010,
       B01010
     };
+
     // the ide of arduino look like shit
     void dmove(LiquidCrystal_I2C lcd ) {
       String input = Serial.readString();
@@ -58,9 +58,9 @@ class protagonist {
 };
 
 class enemy {
-  private:
-    char m[4] = "asdw";
+
   public:
+
     byte body[8] = {
       B11111,
       B11011,
@@ -71,70 +71,56 @@ class enemy {
       B00000,
       B00000
     };
-    int x = 0, y = 0;
 
-    void mover( LiquidCrystal_I2C lcd) {
+    int x , y ;
+    void set() {
+      x = random(5, 19);
+      y = random(4);
+    }
+    void mover( LiquidCrystal_I2C lcd, int xP, int yP) {
       int t = millis();
-
-      if ( t %  642) {
-
-        movements(random(sizeof(m)));
+      if (t % 1500) {
+        // move to a point
+        if ( x < xP) {
+          
+          x++;
+        }
+        else if (x > xP) {
+          x--;
+        }
+        else {
+          if (y < yP) {
+            y++;
+          }
+          else if (y > yP) {
+            y--;
+          }
+        }
       }
-
+      // move to a point
       lcd.setCursor(x, y);
       lcd.write(body);
     }
-
-    void movements(char m) {
-      switch (m) {
-        case 'w':
-          y--;
-          lcd.clear();
-          break;
-        case 's':
-          y++;
-          lcd.clear();
-          break;
-        case 'd':
-          x++;
-          lcd.clear();
-          break;
-        case 'a':
-          x--;
-          lcd.clear();
-
-          break;
-        default:
-          break;
-      }
-    }
-
-
 };
 char m[] = "helloWorld";
 int a = 0;
 protagonist pro;
-enemy ene[2];
+enemy ene;
 void setup() {
   Serial.begin(9600);
   lcd.init();
-  lcd.home();
+  ene.set();
   lcd.backlight();
 
 }
 void loop() {
   int t = millis();
   pro.dmove(lcd);
-  for (int i = 0; i < 2; i++) {
-    ene[i].mover(lcd);
-    if(ene[i].x==pro.x&&ene[i].y==pro.y){
-    Serial.println("haz perdido");  
-    }
+
+  ene.mover(lcd, pro.x, pro.y);
+  if (ene.x == pro.x && ene.y == pro.y) {
+    Serial.println("haz perdido");
   }
-  /*
-  here is the enemy
-  */
- 
   if ( t % 1000) {
     lcd.clear();
   }
