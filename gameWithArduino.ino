@@ -1,5 +1,6 @@
 
 #include <LiquidCrystal_I2C.h>
+
 LiquidCrystal_I2C lcd(0x27, 20, 4);
 class protagonist {
   public:
@@ -25,25 +26,25 @@ class protagonist {
         case 'w':
           if (y > 0) {
             y--;
-            lcd.clear();
+         
           }
           break;
         case 's':
           if (y < 4) {
             y++;
-            lcd.clear();
+
           }
           break;
         case 'd':
           if (x < 20) {
             x++;
-            lcd.clear();
+        
           }
           break;
         case 'a':
           if (x > 0) {
             x--;
-            lcd.clear();
+      
           }
 
           break;
@@ -52,7 +53,7 @@ class protagonist {
           break;
       }
       lcd.setCursor(x, y);
-      lcd.write(body);
+      lcd.write(byte(body));
 
     }
 };
