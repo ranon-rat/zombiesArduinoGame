@@ -159,28 +159,44 @@ void setup() {
   lcd.init();
   ene.set();
   lcd.backlight();
-
+  Serial.println("welcome to this zombie game ");
+  Serial.println("press 's' to start");
 }
 void loop() {
-  bool h = ene.x == pro.x && ene.y == pro.y;
 
-  if (h) {
-    lcd.clear();
-    lcd.setCursor(10 - (sizeof("you lost") / 2), 2);
-    lcd.print("you lost");
-    delay(100);
-    lcd.clear();
+  String input = Serial.readString();
+  char m = input.charAt(0);
 
+  while (m == 's') {
+    bool h = ene.x == pro.x && ene.y == pro.y;
+    if (h) {
+      lcd.clear();
+      lcd.setCursor(10 - (sizeof("you lost") / 2), 2);
+      lcd.print("you lost");
+      delay(1000);
+      lcd.clear();
+      break;
+
+    }
+    else if (ene.die) {
+      lcd.setCursor(10 - (sizeof("YOU WIN") / 2), 2);
+      lcd.print("YOU WIN");
+      delay(1000);
+      lcd.clear();
+      break;
+    }
+    else {
+      pro.dmove(lcd);
+      delay(500);
+      ene.mover(lcd, pro.x, pro.y, pro.shoot, pro.direct);
+      delay(1000);
+      lcd.clear();
+    }
   }
-  else if (ene.die) {
-    lcd.setCursor(10 - (sizeof("YOU WIN") / 2), 2);
-    lcd.print("YOU WIN");
-  }
-  else {
-    pro.dmove(lcd);
-    delay(500);
-    ene.mover(lcd, pro.x, pro.y, pro.shoot, pro.direct);
-    delay(1000);
-    lcd.clear();
-  }
+  ene.set();
+  pro.x = 0, pro.y = 0;
+  lcd.setCursor(20 - (sizeof("welcome to ZGame")), 0);
+  lcd.print("welcome to ZGame");
+  lcd.setCursor(20 - (sizeof("press s to start")), 1);
+  lcd.print("press s to start");
 }
