@@ -1,4 +1,5 @@
 # simpleArduinoGame
+
 i didnt finish this, and have some weird things but i like it
 <p>
 for use this you need to have 
@@ -9,6 +10,7 @@ for use this you need to have
  
  
 # buy links 
+
 <a href="https://www.amazon.com/-/es/SunFounder-Serial-M%C3%B3dulo-Arduino-Mega2560/dp/B01GPUMP9C/ref=sr_1_2?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=lcd+4x20&qid=1607453872&sr=8-2">
   
   - i2c module and lcd 4x20
@@ -17,6 +19,7 @@ for use this you need to have
   
   - arduino uno 
   </a>
+  
 # assembly instructions 
 
 you need to conect the arduino into the i2c like in this circuite 
