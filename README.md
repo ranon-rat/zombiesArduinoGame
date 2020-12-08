@@ -35,7 +35,7 @@ you need to conect the arduino into the i2c like in this circuite
 
   <img width=500 src="https://parzibyte.me/blog/wp-content/uploads/2018/02/Conexi%C3%B3nArduinoMEGA_bb.png"> 
 
-then of that you need to upload the sketch ,and open the serial for start to play
+then of that you need to upload the sketch ,and open the serial for start to playing
 
  # finally result
 
