@@ -3,22 +3,10 @@
 # Products that you need for play this
 For use this you need to have 
   
-- an arduino ( we can be mega,nano,uno,etc)
--lcd 4x20
+-  arduino ( we can be mega,nano,uno,etc)
+- lcd 4x20
 - i2c Module 
- 
- 
-# Buy links 
 
-<a href="https://www.amazon.com/-/es/SunFounder-Serial-M%C3%B3dulo-Arduino-Mega2560/dp/B01GPUMP9C/ref=sr_1_2?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=lcd+4x20&qid=1607453872&sr=8-2">
-  
-  - i2c module and lcd 4x20
-  </a>
-<a href ="https://www.amazon.com/-/es/Elegoo-Placa-ATmega328P-ATMEGA16U2-Arduino/dp/B01EWOE0UU/ref=sr_1_4?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=arduino+uno&qid=1607454014&sr=8-4"> 
-  
-  - arduino uno 
-  </a>
-  
 # Assembly instructions 
 
 You need to conect the arduino into the i2c like in this circuits depending of your arduino
@@ -39,5 +27,16 @@ Then of that you need to upload the sketch ,and open the serial for start to pla
  # final result
 
   
-</p>
+
 <img src="https://github.com/ranon-rat/zombiesArduinoGame/blob/main/arduino.jpeg?raw=true">
+
+# Buy links 
+
+<a href="https://www.amazon.com/-/es/SunFounder-Serial-M%C3%B3dulo-Arduino-Mega2560/dp/B01GPUMP9C/ref=sr_1_2?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=lcd+4x20&qid=1607453872&sr=8-2">
+  
+  - i2c module and lcd 4x20
+  </a>
+<a href ="https://www.amazon.com/-/es/Elegoo-Placa-ATmega328P-ATMEGA16U2-Arduino/dp/B01EWOE0UU/ref=sr_1_4?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=arduino+uno&qid=1607454014&sr=8-4"> 
+  
+  - arduino uno 
+  </a>
