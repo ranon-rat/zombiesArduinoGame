@@ -21,11 +21,17 @@ for use this you need to have
 
 you need to conect the arduino into the i2c like in this circuite 
 - arduino uno 
+
   <img width = 500 src="https://hacksterio.s3.amazonaws.com/uploads/attachments/1003526/layout_41uyAShgS7.jpg">
+  
 - arduino nano 
+
   <img width=500 src ="https://eecs.blog/wp-content/uploads/2019/02/arduino-i2c-ssd1306-oled-screen-tutorial-1280x720.png">
+  
 - arduino mega 
+
   <img width=500 src="https://parzibyte.me/blog/wp-content/uploads/2018/02/Conexi%C3%B3nArduinoMEGA_bb.png"> 
+
 then of that you need to upload the sketch ,and open the serial for start to play
 
  #finally result
