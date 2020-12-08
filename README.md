@@ -22,7 +22,7 @@ for use this you need to have
 you need to conect the arduino into the i2c like in this circuite 
 - arduino uno 
 
-  <img width = 500 src="https://hacksterio.s3.amazonaws.com/uploads/attachments/1003526/layout_41uyAShgS7.jpg">
+  <img width = 500 src="https://www.geekfactory.mx/wp-content/uploads/2017/04/displayI2C_bb_fritzing.jpg">
   
 - arduino nano 
 
@@ -34,7 +34,7 @@ you need to conect the arduino into the i2c like in this circuite
 
 then of that you need to upload the sketch ,and open the serial for start to play
 
- #finally result
+ # finally result
 
   
 </p>
