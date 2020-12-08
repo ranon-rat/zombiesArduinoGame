@@ -37,7 +37,7 @@ you need to conect the arduino into the i2c like in this circuite
 
 then of that you need to upload the sketch ,and open the serial for start to playing
 
- # finally result
+ # final result
 
   
 </p>
