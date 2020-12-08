@@ -22,7 +22,7 @@ for use this you need to have
   
 # assembly instructions 
 
-you need to conect the arduino into the i2c like in this circuite 
+You need to conect the arduino into the i2c like in this circuits depending of your arduino
 - arduino uno 
 
   <img width = 500 src="https://www.geekfactory.mx/wp-content/uploads/2017/04/displayI2C_bb_fritzing.jpg">
@@ -35,7 +35,7 @@ you need to conect the arduino into the i2c like in this circuite
 
   <img width=500 src="https://parzibyte.me/blog/wp-content/uploads/2018/02/Conexi%C3%B3nArduinoMEGA_bb.png"> 
 
-then of that you need to upload the sketch ,and open the serial for start to playing
+Then of that you need to upload the sketch ,and open the serial for start to playing
 
  # final result
 
