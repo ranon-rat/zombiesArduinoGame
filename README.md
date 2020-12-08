@@ -1,6 +1,6 @@
 # simpleArduinoGame
 
-# products that you need for play this
+# Products that you need for play this
 For use this you need to have 
   
 - an arduino ( we can be mega,nano,uno,etc)
