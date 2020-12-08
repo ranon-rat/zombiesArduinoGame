@@ -1,8 +1,8 @@
 # simpleArduinoGame
 
-i didnt finish this, and have some weird things but i like it
+I didnt finish this, and have some weird things but i like it
 <p>
-for use this you need to have 
+For use this you need to have 
   
 - an arduino ( we can be mega,nano,uno,etc)
 -lcd 4x20
